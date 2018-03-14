@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvShuffle"
+        android:layout_marginTop="@dimen/dp10"
+        android:padding="@dimen/dp15"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dp5"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"/>
+
+
+    <Spinner
+        android:id="@+id/spinnerGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dp5"
+        android:background="@drawable/shape_drop_down" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvGroups"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginStart="@dimen/dp2"
+        android:layout_marginEnd="@dimen/dp2"
+        android:paddingTop="@dimen/dp4"
+        android:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>
